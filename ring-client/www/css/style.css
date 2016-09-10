@@ -24,13 +24,15 @@ html{
 }
 .v-center{
   position: absolute;
-  left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 .container{
 	padding-left: 5px;
 	padding-right: 5px;
+}
+.align-left{
+	text-align: left;
 }
 
 /*login buttons*/
@@ -89,4 +91,18 @@ html{
 .loginBtn--google:hover,
 .loginBtn--google:focus {
   background: #E74B37;
+}
+/*home*/
+.home-wrap{
+	padding-top: 80px;
+}
+.home-wrap i{
+	font-size: 30px;
+	left:10px;
+	position: absolute;
+	top: 6px;
+}
+.home-wrap span{
+	font-size: 18px;
+	padding-left: 30px;
 }
