@@ -86,13 +86,39 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-  //Ring URLs
   .state('app.request', {
       url: '/request',
       views: {
         'menuContent': {
           templateUrl: 'src/components/request/request.html',
           controller: 'RequestCtrl'
+        }
+      }
+    })
+  .state('app.dealList', {
+      url: '/dealList',
+      views: {
+        'menuContent': {
+          templateUrl: 'src/components/dealList/dealList.html',
+          controller: 'DealListCtrl'
+        }
+      }
+    })
+  .state('app.dealDetails', {
+      url: '/dealDetails',
+      views: {
+        'menuContent': {
+          templateUrl: 'src/components/dealDetails/dealDetails.html',
+          controller: 'DealDetailsCtrl'
+        }
+      }
+    })
+  .state('app.loaderSent', {
+      url: '/loaderSent',
+      views: {
+        'menuContent': {
+          templateUrl: 'src/components/loaderSent/loaderSent.html',
+          controller: 'LoaderSentCtrl'
         }
       }
     })

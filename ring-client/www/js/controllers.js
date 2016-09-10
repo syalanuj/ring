@@ -52,35 +52,24 @@ angular.module('starter.controllers', [])
   ];
 })
 
+//Ring
 .controller('LoginCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
+  
 })
 .controller('HomeCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
+  
 })
 .controller('RequestCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
+    
+})
+.controller('DealListCtrl', function($scope) {
+    
+})
+.controller('DealDetailsCtrl', function($scope) {
+    
+})
+.controller('LoaderSentCtrl', function($scope) {
+    
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
