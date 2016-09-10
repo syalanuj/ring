@@ -58,7 +58,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-
   .state('app.single', {
     url: '/playlists/:playlistId',
     views: {
@@ -67,7 +66,38 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         controller: 'PlaylistCtrl'
       }
     }
-  });
+  })
+  //Ring URLs
+  .state('app.login', {
+      url: '/login',
+      views: {
+        'menuContent': {
+          templateUrl: 'src/components/login/login.html',
+          controller: 'LoginCtrl'
+        }
+      }
+    })
+  .state('app.home', {
+      url: '/home',
+      views: {
+        'menuContent': {
+          templateUrl: 'src/components/home/home.html',
+          controller: 'HomeCtrl'
+        }
+      }
+    })
+  //Ring URLs
+  .state('app.request', {
+      url: '/request',
+      views: {
+        'menuContent': {
+          templateUrl: 'src/components/request/request.html',
+          controller: 'RequestCtrl'
+        }
+      }
+    })
+  
+  ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/playlists');
 });
