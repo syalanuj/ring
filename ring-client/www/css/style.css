@@ -161,7 +161,7 @@ border-bottom-left-radius: 0px;
    	margin:5px;
    }
    .pord{
- text-align: center;
+   	-webkit-justify-content: space-around;
    }
    .pord span{
    	padding-top: 12px;
