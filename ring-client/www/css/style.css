@@ -1,7 +1,92 @@
 /* Empty. Add your own CSS if you like */
+html{
+	font-family: 'lato-medium'!important;
+	-webkit-font-smoothing: antialiased;
+}
 .bar-red{
 	background-color: #e74c3c!important;
 }
 .white{
 	color: #fff!important;
+}
+@font-face {
+    font-family: 'lato-medium';
+    src: url('../fonts/Lato-Medium.woff');
+}
+.lato-m{
+	font-family: 'lato-medium';
+}
+.text-uppercase{
+	text-transform: uppercase;
+}
+.text-center{
+	text-align: center;
+}
+.v-center{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.container{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/*login buttons*/
+
+
+/* Shared */
+.loginBtn {
+  box-sizing: border-box;
+  position: relative;
+  /* width: 13em;  - apply for fixed size */
+ padding: 0 15px 0 15px;
+  border: none;
+  text-align: left;
+  line-height: 34px;
+  white-space: nowrap;
+  border-radius: 0.2em;
+  font-size: 16px;
+  color: #FFF;
+  font-family: 'lato-medium';
+  text-align:center;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: white;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.loginBtn:focus {
+  outline: none;
+}
+.loginBtn:active {
+  box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
+}
+
+
+/* Facebook */
+.loginBtn--facebook {
+  background-color: #4C69BA;
+  background-image: linear-gradient(#4C69BA, #3B55A0);
+  /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+  text-shadow: 0 -1px 0 #354C8C;
+}
+.loginBtn--facebook:hover,
+.loginBtn--facebook:focus {
+  background-color: #5B7BD5;
+  background-image: linear-gradient(#5B7BD5, #4864B1);
+}
+
+
+/* Google */
+.loginBtn--google {
+  /*font-family: "Roboto", Roboto, arial, sans-serif;*/
+  background: #DD4B39;
+}
+.loginBtn--google:hover,
+.loginBtn--google:focus {
+  background: #E74B37;
 }
