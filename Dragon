@@ -1,0 +1,34 @@
+Request
+coordinates
+
+Deal--> Backend --> For each Resturant
+
+
+
+Deal -
+
+Resturaunt drop down
+Deal Price
+Deal Details
+Request id
+user-id
+
+Resturaunt Details
+address
+geo coordinates
+
+
+
+Locations -total 5 for now
+
+
+Entities
+
+User-Requests
+
+Deals
+
+Resturaunt
+
+
+

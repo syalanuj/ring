@@ -6,7 +6,7 @@ module.exports = {
 
   // MongoDB connection options
   mongo: {
-    uri: 'mongodb://localhost/proj-dev'
+    uri: 'mongodb://localhost/dragon-dev'
   },
 
   // Seed database on startup
