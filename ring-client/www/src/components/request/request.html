@@ -1,67 +1,129 @@
 <ion-view view-title="MAKE YOUR DEAL">
-  <ion-content>
-  <div class="req-wrap">
-  <!-- Make your deal -->
-  <!-- number of guests -->
-    <div class="guests lato-m red flex container">
-    	<label>Guests</label>
-    	<div class="margin-left">
-    	<button class="button button-small button-stable minus-button">
-  <i class="ionicons ion-android-remove"></i>
-		</button>
-    	<input type="number" name="" min="1">
-    	<button class="button button-small button-stable plus-button">
-  <i class="ionicons ion-android-add"></i>
-		</button>
+	<ion-content>
+		<div class="req-wrap flex-col">
+			<!-- party or corporate booking -->
+			<ion-list>
+					<ion-radio ng-model="choice" ng-value="'I'" class="lato-m red">Individual</ion-radio>
+					<ion-radio ng-model="choice" ng-value="'C'" class="lato-m red">Corporate</ion-radio>
+			</ion-list>
+			<!-- Make your deal -->
+			<!-- number of guests -->
+			<div class="guests lato-m red flex container">
+				<label>Guests</label>
+				<div class="margin-left">
+					<button class="button button-small button-stable minus-button">
+						<i class="ionicons ion-android-remove"></i>
+					</button>
+					<input type="number" name="" min="1">
+					<button class="button button-small button-stable plus-button">
+						<i class="ionicons ion-android-add"></i>
+					</button>
+				</div>
+			</div>
+			<!-- enter location -->
+			<div class="guests lato-m red flex container">
+				<label>Location</label>
+				<div class="margin-left">
+					<input type="text" name="">
+				</div>
+			</div>
+			<!-- date -->
+			<div class="guests lato-m red flex container">
+				<label>Date</label>
+				<div class="margin-left">
+					<input type="date" name="">
+				</div>
+			</div>
+			<!-- time -->
+			<div class="price-disc container guests">
+				<label class="lato-m red">
+					Time
+				</label>
+				<label class="item item-input item-select">
+					<div class="input-label">
+					From:
+					</div>
+					<select>
+						<option>Blue</option>
+						<option selected>Green</option>
+						<option>Red</option>
+					</select>
+				</label>
+				<label class="item item-input item-select">
+					<div class="input-label">
+					To:
+					</div>
+					<select>
+						<option>Blue</option>
+						<option selected>Green</option>
+						<option>Red</option>
+					</select>
+				</label>
+			</div>
+			<!-- add tags -->
+			<div class="tags container">
+				<p class="red lato-m">Add Tags</p>
+				<button class="button btn-dim white lato-m">
+					Bar
+				</button>
+				<button class="button btn-dim white lato-m">
+					Sheesha
+				</button>
+				<button class="button btn-dim white lato-m">
+					Main Course
+				</button>
+				<button class="button btn-dim white lato-m">
+					Starters
+				</button>
+				<button class="button btn-dim white lato-m">
+					Beverages
+				</button>
+				<button class="button btn-dim white lato-m">
+					Vegetarian
+				</button>
+				<button class="button btn-dim white lato-m">
+					Non-Vegetarian
+				</button>
+			</div>
+			<!-- price or discount range / perhead-a-la carté-->
+			<div class="price-disc container">
+				<ion-list>
+					<ion-radio ng-model="choice" ng-value="'A'" class="lato-m red">Price Range (&#8377;)</ion-radio>
+					<ion-radio ng-model="choice" ng-value="'B'" class="lato-m red">Discount Range</ion-radio>
+				</ion-list>
+				<label class="item item-input item-select">
+					<div class="input-label">
+					Min
+					</div>
+					<select>
+						<option>Blue</option>
+						<option selected>Green</option>
+						<option>Red</option>
+					</select>
+				</label>
+				<label class="item item-input item-select">
+					<div class="input-label">
+					Max
+					</div>
+					<select>
+						<option>Blue</option>
+						<option selected>Green</option>
+						<option>Red</option>
+					</select>
+				</label>
+			</div>
+			<!-- group booking slider -->
+
+			<!-- Terms and conditions -->
+			<div class="text-center">
+			<h6 class="dim lato-m italic">(By clicking on Submit you accept Dragon's T&amp;Cs)</h6>
+			</div>
+			<!-- submit button -->
+			<div class="margin-top-auto">
+				<button class="button button-full button-assertive lato-m bottom-submit">
+					Submit
+				</button>
+			</div>
 		</div>
-    </div>
-    <!-- enter location -->
-    <div class="guests lato-m red flex container">
-    	<label>Location</label>
-    	<div class="margin-left">
-    	<input type="text" name="">
-		</div>
-    </div>
-    <!-- add tags -->
-    <div class="tags container">
-    	<p class="red lato-m">Add Tags</p>
-    	<button class="button btn-dim white lato-m">
-  Bar
-		</button>
-		<button class="button btn-dim white lato-m">
-  Sheesha
-		</button>
-		<button class="button btn-dim white lato-m">
-  Main Course
-		</button>
-		<button class="button btn-dim white lato-m">
-  Starters
-		</button>
-		<button class="button btn-dim white lato-m">
-  Beverages
-		</button>
-		<button class="button btn-dim white lato-m">
-  Vegetarian
-		</button>
-		<button class="button btn-dim white lato-m">
-  Non-Vegetarian
-		</button>
-    </div>
-    <!-- price or discount range -->
-    <div class="pord flex container">
-    <button class="button button-outline button-assertive lato-m">
-  Price Range
-</button>
-<span class="lato-m">or</span>
-<button class="button button-outline button-assertive lato-m">
-  Discount Range
-</button>
-</div>
-<div class="">
-	<button class="button button-full button-assertive lato-m bottom-submit">
-  Submit
-</button>
-</div>
-    </div>
-  </ion-content>
+	</ion-content>
 </ion-view>

@@ -3,6 +3,10 @@ html{
 	font-family: 'lato-medium'!important;
 	-webkit-font-smoothing: antialiased;
 }
+select{
+	background-color: #f8f8f8!important;
+	min-width: 100px;
+}
 .bar-red{
 	background-color: #e74c3c!important;
 }
@@ -44,7 +48,21 @@ html{
 	display: flex;
 	display: -webkit-flex;
 }
-
+.flex-col{
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column; 
+}
+.full-width{
+	width: 100%;
+}
+.margin-top-auto{
+	margin-top: auto;
+}
+.italic{
+	font-style: italic;
+}
 /*login buttons*/
 
 
@@ -118,6 +136,7 @@ html{
 }
 .req-wrap{
 	padding-top: 20px;
+	height: 100%;
 }
 .req-wrap label, .req-wrap p{
 	font-size: 20px;
@@ -160,10 +179,31 @@ border-bottom-left-radius: 0px;
    	background-color: #bdbdbd;
    	margin:5px;
    }
-   .pord{
+   .select-disc{
    	-webkit-justify-content: space-around;
    }
    .pord span{
    	padding-top: 12px;
    }
    
+   .bottom-submit{
+   	margin-bottom: 0px!important;
+   }
+.item-select .select-1{
+	left: 0;
+}
+.item-select .select-1:after{
+	position: absolute;
+    top: 50%;
+    left: 70px!important;
+    margin-top: -3px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    color: #999;
+    content: ""!important;
+    z-index: 43434343;
+    pointer-events: none;
+}
