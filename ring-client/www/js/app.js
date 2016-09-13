@@ -122,7 +122,51 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-  
+  .state('app.preOrderRequest', {
+      url: '/preOrderRequest',
+      views: {
+        'menuContent': {
+          templateUrl: 'src/components/preOrderRequest/preOrderRequest.html',
+          controller: 'PreOrderRequestCtrl'
+        }
+      }
+    })
+  .state('app.preOrderConfirm', {
+      url: '/preOrderConfirm',
+      views: {
+        'menuContent': {
+          templateUrl: 'src/components/preOrderConfirm/preOrderConfirm.html',
+          controller: 'PreOrderConfirmCtrl'
+        }
+      }
+    })
+  .state('app.restaurants', {
+      url: '/restaurants',
+      views: {
+        'menuContent': {
+          templateUrl: 'src/components/restaurants/restaurants.html',
+          controller: 'RestaurantsCtrl'
+        }
+      }
+    })
+  .state('app.preOrderVoucher', {
+      url: '/preOrderVoucher',
+      views: {
+        'menuContent': {
+          templateUrl: 'src/components/preOrderVoucher/preOrderVoucher.html',
+          controller: 'PreOrderVoucherCtrl'
+        }
+      }
+    })
+  .state('app.preOrderVoucherBooking', {
+      url: '/preOrderVoucherBooking',
+      views: {
+        'menuContent': {
+          templateUrl: 'src/components/preOrderVoucherBooking/preOrderVoucherBooking.html',
+          controller: 'PreOrderVoucherBookingCtrl'
+        }
+      }
+    })
   ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/playlists');

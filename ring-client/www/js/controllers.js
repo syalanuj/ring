@@ -69,8 +69,19 @@ angular.module('starter.controllers', [])
     
 })
 .controller('LoaderSentCtrl', function($scope) {
-    
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
-});
+})
+
+.controller('PreOrderRequestCtrl', function($scope, $stateParams) {
+})
+.controller('PreOrderConfirmCtrl', function($scope, $stateParams) {
+})
+.controller('RestaurantsCtrl', function($scope, $stateParams) {
+})
+.controller('PreOrderVoucherCtrl', function($scope, $stateParams) {
+})
+.controller('PreOrderVoucherBookingCtrl', function($scope, $stateParams) {
+})
+;
