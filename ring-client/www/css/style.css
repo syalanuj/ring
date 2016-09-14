@@ -17,7 +17,10 @@ select{
 	color: #fff!important;
 }
 .dim{
-	color: #bdbdbd;
+	color: #bdbdbd!important;
+}
+.dark{
+	color: #6d6d6d;
 }
 @font-face {
     font-family: 'lato-medium';
@@ -62,6 +65,9 @@ select{
 }
 .italic{
 	font-style: italic;
+}
+.pull-right{
+	float: right;
 }
 /*login buttons*/
 
@@ -206,4 +212,28 @@ border-bottom-left-radius: 0px;
     content: ""!important;
     z-index: 43434343;
     pointer-events: none;
+}
+.deal{
+	font-size: 20px!important;
+}
+.deal-price{
+	width: 30%;
+	text-align: -webkit-center;
+    font-size: 22px;
+    padding: 26px 16px 26px 20px;
+    border-top: 5px solid red;
+    border-left: 1px solid #ddd;
+}
+.deal-bar{
+	width: 70%;
+	padding-top: 16px;
+}
+.deal-item{
+	display: -webkit-box;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.food img{
+	width: 100%;
 }
