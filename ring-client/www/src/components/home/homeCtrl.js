@@ -3,7 +3,7 @@
 
 	angular
 		.module('app.home', [])
-		.controller('homeCtrl',['$scope', '$state', homeCtrl]);
+		.controller('HomeCtrl',['$scope', '$state', homeCtrl]);
 
 	function homeCtrl($scope, $state) {
 		/* jshint validthis: true */

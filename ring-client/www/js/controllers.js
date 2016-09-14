@@ -52,16 +52,16 @@ angular.module('starter.controllers', [])
   ];
 })
 
-//Ring
-.controller('LoginCtrl', function($scope) {
+// //Ring
+// .controller('LoginCtrl', function($scope) {
   
-})
-.controller('HomeCtrl', function($scope) {
+// })
+// .controller('HomeCtrl', function($scope) {
   
-})
-.controller('RequestCtrl', function($scope) {
+// })
+// .controller('RequestCtrl', function($scope) {
     
-})
+// })
 .controller('DealListCtrl', function($scope) {
     
 })
