@@ -7,6 +7,14 @@ select{
 	background-color: #f8f8f8!important;
 	min-width: 100px;
 }
+.vcenter{
+	-webkit-align-items: center;
+    -webkit-box-align: center;
+}
+.hcenter{
+	-webkit-justify-content:center;
+	justify-content: center;
+}
 .bar-red{
 	background-color: #e74c3c!important;
 }
@@ -19,8 +27,23 @@ select{
 .dim{
 	color: #bdbdbd!important;
 }
+.dim-bg{
+	background-color: #dbdbdb!important;
+}
 .dark{
 	color: #6d6d6d;
+}
+.dark2{
+	color: #565555;
+}
+.full-height{
+	height: 100vh;
+}
+.space-around{
+	-webkit-justify-content: space-around;
+}
+.no-border-left{
+	border-left: 0px!important;
 }
 @font-face {
     font-family: 'lato-medium';
@@ -32,8 +55,8 @@ select{
 .text-uppercase{
 	text-transform: uppercase;
 }
-.text-center{
-	text-align: center;
+.text-capitalise{
+	text-transform: capitalize;;
 }
 .v-center{
   position: absolute;
@@ -236,4 +259,39 @@ border-bottom-left-radius: 0px;
 }
 .food img{
 	width: 100%;
+}
+.rest-name{
+	padding: 15px;
+}
+.rest-title{
+	font-size: 24px;
+	margin-right: 10px;
+}
+.reviews{
+	padding-top: 4px;
+}
+.offer{
+	padding: 10px;
+}
+.men-rev{
+
+}
+.ico-box{
+	padding: 10px;
+	border-left: 1px solid #bdbdbd;
+	border-bottom: 1px solid #bdbdbd;
+	border-left: 1px solid #bdbdbd;
+	width: 100%;
+}
+.ico-box i{
+	font-size: 30px;
+}
+.ico-box-2 i{
+	font-size: 16px;
+}
+.ico-box-2 p{
+	margin-top: 10px;
+}
+.cont-rest{
+	padding: 15px;
 }
