@@ -1,5 +1,36 @@
 <ion-view view-title="Pre Order Request">
   <ion-content>
-    <h1>Pre-Order - Form.png</h1>
+    <div class="lato-m red text-center pre-ord">
+    	With Pre-Order, you can place your order<br> by selecting items from the menu or simply book a <br> table by paying in advance!
+    </div>
+    <!-- number of guests -->
+    <div class="guests lato-m red flex container">
+				<label>Guests</label>
+				<div class="margin-left flex">
+					<button class="button button-small button-stable minus-button">
+						<i class="ionicons ion-android-remove"></i>
+					</button>
+					<input type="number" name="" min="1">
+					<button class="button button-small button-stable plus-button">
+						<i class="ionicons ion-android-add"></i>
+					</button>
+				</div>
+			</div>
+     <!-- date -->
+			<div class="guests lato-m red flex container">
+				<label>Date</label>
+				<div class="margin-left">
+					<input type="date" name="">
+				</div>
+			</div>
+      <div class="price-disc container guests flex">
+				<label class="lato-m red">
+					Time
+				</label>
+			
+				<div class="margin-left">
+				<input type="time" name="">
+				</div>
+			</div>      
   </ion-content>
 </ion-view>
