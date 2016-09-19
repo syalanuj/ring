@@ -1,36 +1,76 @@
 <ion-view view-title="Pre Order Request">
   <ion-content>
+  <div class="flex-col">
     <div class="lato-m red text-center pre-ord">
     	With Pre-Order, you can place your order<br> by selecting items from the menu or simply book a <br> table by paying in advance!
     </div>
     <!-- number of guests -->
-    <div class="guests lato-m red flex container">
-				<label>Guests</label>
+    <div class="guests lato-m red flex   container">
+    <div class="row">
+				<label class="col-33">Guests</label>
 				<div class="margin-left flex">
 					<button class="button button-small button-stable minus-button">
 						<i class="ionicons ion-android-remove"></i>
 					</button>
-					<input type="number" name="" min="1">
+					<input type="number" name="" min="1" class="noguest">
 					<button class="button button-small button-stable plus-button">
 						<i class="ionicons ion-android-add"></i>
 					</button>
 				</div>
+				</div>
 			</div>
      <!-- date -->
-			<div class="guests lato-m red flex container">
-				<label>Date</label>
+			<div class="guests lato-m red flex   container">
+			<div class="row">
+				<label class="col-33">Date</label>
 				<div class="margin-left">
 					<input type="date" name="">
 				</div>
+				</div>
 			</div>
-      <div class="price-disc container guests flex">
-				<label class="lato-m red">
+      <div class="price-disc  guests flex  container">
+      <div class="row">
+				<label class="lato-m red col-33">
 					Time
 				</label>
 			
 				<div class="margin-left">
 				<input type="time" name="">
 				</div>
-			</div>      
+				</div>
+			</div>
+			 <div class="price-disc  guests container">
+			 <div class="row">
+				<label class="lato-m red col-33">
+					Name
+				</label>
+			
+				<div class="full-width col-67">
+				<input type="text" name="" class="full-width">
+				</div>
+				</div>
+			</div>
+			 <div class="price-disc  guests container">
+			 <div class="row">
+				<label class="lato-m red col-33">
+					Mobile
+				</label>
+			
+				<div class="col-67 full-width">
+				<input type="tel" name="" class="full-width">
+				</div>
+				</div>
+			</div>
+			<div class="margin-top-auto">
+			<div class="lato-m red text-center pre-ord">
+    	Pay in advance to either Book a Table or<br>
+    	Pre-Select your order
+    </div>
+			<div class="button-bar bar-assertive  lato-m order-bar">
+  <a class="button ">Book a Table</a>
+  <a class="button ">Pre-Order</a>
+  </div>
+</div>   
+</div>               
   </ion-content>
 </ion-view>
