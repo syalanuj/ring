@@ -4,6 +4,142 @@
 		"selected_items":
 		[
 			[
+				"spa",
+				"space-between"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"ma",
+				"margin-right"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"bor",
+				"border-left"
+			],
+			[
+				"di",
+				"div	Tag"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"i",
+				"important"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"li",
+				"li	Tag"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"s",
+				"space-between"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"border-top",
+				"border-top-right-radius"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"text",
+				"text-align-last"
+			],
+			[
+				"text-al",
+				"text-align"
+			],
+			[
+				"c",
+				"class	Attr"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"lato",
+				"lato-medium"
+			],
+			[
 				"co",
 				"color"
 			],
@@ -40,44 +176,8 @@
 				"views	module"
 			],
 			[
-				"d",
-				"django"
-			],
-			[
-				"text",
-				"textarea"
-			],
-			[
 				"font",
 				"font-size"
-			],
-			[
-				"pa",
-				"padding-right"
-			],
-			[
-				"padd",
-				"padding-left"
-			],
-			[
-				"ma",
-				"margin-top"
-			],
-			[
-				"mar",
-				"margin-right"
-			],
-			[
-				"fon",
-				"font-size"
-			],
-			[
-				"li",
-				"link	Tag"
-			],
-			[
-				"bo",
-				"border-radius"
 			]
 		]
 	},
@@ -92,9 +192,13 @@
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "",
+		"last_filter": "inde",
 		"selected_items":
 		[
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
 			[
 				"ins",
 				"Package Control: Install Package"
@@ -108,7 +212,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 449.0
+		"width": 467.0
 	},
 	"console":
 	{
@@ -129,16 +233,26 @@
 	},
 	"file_history":
 	[
+		"/Users/seemachowdhary/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/src/components/loaderSent/loaderSent.html",
+		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/src/components/preOrderRequest/preOrderRequest.html",
+		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/src/components/preOrderConfirm/preOrderConfirm.html",
+		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/src/components/dealDetails/dealDetails.html",
+		"/Users/seemachowdhary/Desktop/Dragon/ring-client/config.xml",
+		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/src/components/dealList/dealList.html",
+		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/src/components/dealDetails/dealDetailsCtrl.js",
+		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/src/components/request/request.html",
+		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/src/components/home/home.html",
+		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/templates/menu.html",
+		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/templates/home.html",
+		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/index.html",
+		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/js/app.js",
+		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/src/components/login/login.html",
 		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/templates/playlists.html",
 		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/templates/search.html",
-		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/templates/home.html",
-		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/js/app.js",
 		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/templates/browse.html",
-		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/templates/menu.html",
 		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/templates/playlist.html",
 		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/src/app.js",
-		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/index.html",
-		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/src/components/home/home.html",
 		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/templates/login.html",
 		"/Users/seemachowdhary/Desktop/Dragon/ring-client/www/css/style.css",
 		"/Users/seemachowdhary/Downloads/assets 2/product_page_css.txt",
@@ -204,6 +318,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"col",
+			"col-75",
+			"col-25",
+			"margin-bott",
+			"border-le",
+			"space",
+			"flex",
+			"-web",
 			".bar-red",
 			"button",
 			"location",
@@ -248,11 +370,12 @@
 		"regex": false,
 		"replace_history":
 		[
+			"col-67"
 		],
 		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
-		"whole_word": false,
+		"whole_word": true,
 		"wrap": true
 	},
 	"groups":

@@ -7,9 +7,7 @@ select{
 	background-color: #f8f8f8!important;
 	min-width: 100px;
 }
-.scroll{
-	min-height: 100vh;
-}
+
 .text-right{
 	text-align: right;
 }
@@ -28,7 +26,7 @@ select{
 .bar-red{
 	background-color: #e74c3c!important;
 }
-.red{
+.red, .veg span, .non-veg span{
 	color: #e74c3c;
 }
 .white{
@@ -380,4 +378,25 @@ select{
 	justify-content: space-between;
 	-webkit-justify-content: space-between;
 }
-.veg
+.veg{
+	list-style-type: disc;
+	color: #00a55b;
+}
+.non-veg {
+	list-style-type: disc;
+	color: #d02939;
+}
+.prices li{
+	padding-bottom: 10px;
+}
+.prices{
+	border-bottom: 1px solid #6d6d6d;
+}
+.text-bold{
+	font-weight: bold;
+}
+
+
+
+
+
