@@ -395,7 +395,9 @@ select{
 .text-bold{
 	font-weight: bold;
 }
-
+.button-bar > .button:first-child,.button-bar > .button:last-child{
+	border-radius: 0px;
+}
 
 
 
