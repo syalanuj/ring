@@ -11,11 +11,11 @@
 			<div class="guests lato-m red flex container">
 				<label>Guests</label>
 				<div class="margin-left flex">
-					<button class="button button-small button-stable minus-button">
+					<button class="button button-small button-stable minus-button" ng-click="request.guestCount = request.guestCount - 1">
 						<i class="ionicons ion-android-remove"></i>
 					</button>
-					<input type="number" name="" min="1">
-					<button class="button button-small button-stable plus-button">
+					<input type="number" ng-model="request.guestCount" name="" min="1">
+					<button class="button button-small button-stable plus-button" ng-click="request.guestCount = request.guestCount + 1">
 						<i class="ionicons ion-android-add"></i>
 					</button>
 				</div>

@@ -13,7 +13,7 @@
 		vm.RequestTypes = CONSTANTS.REQUEST_TYPE;
 		vm.request = {
 			requestType: vm.requestType,
-			guestCount: 0,
+			guestCount: 1,
 			location: undefined,
 			tags:[],
 			requestDateTime: undefined,
