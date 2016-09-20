@@ -68,8 +68,8 @@ angular.module('starter.controllers', [])
 .controller('DealDetailsCtrl', function($scope) {
     
 })
-.controller('LoaderSentCtrl', function($scope) {
-})
+// .controller('LoaderSentCtrl', function($scope) {
+// })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 })

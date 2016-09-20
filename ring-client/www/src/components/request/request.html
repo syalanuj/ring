@@ -87,8 +87,11 @@
 			</div>
 			<!-- price or discount range / perhead-a-la carté-->
 			<div class="price-disc container">
-				<ion-list>
-					<ion-radio ng-model="choice" ng-value="'A'" class="lato-m red">Price Range (&#8377;)</ion-radio>
+				<ion-list ng-show="requestType === RequestTypes.MAKE_YOUR_DEAL">
+					<ion-radio  ng-model="choice" ng-value="'A'" class="lato-m red">Price Range (&#8377;)</ion-radio>
+					<ion-radio ng-model="choice" ng-value="'B'" class="lato-m red">Discount Range</ion-radio>
+				</ion-list>
+				<ion-list ng-show="requestType === RequestTypes.GROUP_BOOKING">
 					<ion-radio ng-model="choice" ng-value="'B'" class="lato-m red">Discount Range</ion-radio>
 				</ion-list>
 				<label class="item item-input item-select">
@@ -120,7 +123,7 @@
 			</div>
 			<!-- submit button -->
 			<div class="margin-top-auto">
-				<a href="#/app/loaderSent" class="button button-full button-assertive lato-m bottom-submit">
+				<a ng-href="#/app/loaderSent/{{loaderType}}"  class="button button-full button-assertive lato-m bottom-submit">
 					Submit
 				</a>
 			</div>

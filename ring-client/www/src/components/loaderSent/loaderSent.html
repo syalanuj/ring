@@ -1,12 +1,12 @@
-<ion-view view-title="Loader Sent">
+<ion-view view-title="{{title}}">
   <ion-content>
     <div class="full-height flex-col vcenter hcenter container">
     <!-- executive will call you -->
-    	<span class="lato-m dark"> Our Executive will call you shortly</span>
+    	<span ng-show="loaderType === LoaderTypes.EXECUTIVE_CALL" class="lato-m dark"> Our Executive will call you shortly</span>
     <!-- quote has been sent -->
     	<ion-spinner></ion-spinner></br>
-    	<span class="lato-m dark"> Quote has been sent</span>
-    	<a href="#/app/dealList">Deal list automated</a>
+    	<span ng-show="loaderType === LoaderTypes.QUOTE_SENT" class="lato-m dark"> Quote has been sent</span>
+    	<a ng-show="loaderType === LoaderTypes.QUOTE_SENT" href="#/app/dealList">Deal list automated</a>
     </div>
   </ion-content>
 </ion-view>

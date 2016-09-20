@@ -10,6 +10,7 @@
 		var vm = $scope;
 		vm.title = "Request";
 		vm.requestType = parseInt($state.params.type);
+		vm.loaderType = CONSTANTS.LOADER_TYPE.EXECUTIVE_CALL;
 		vm.RequestTypes = CONSTANTS.REQUEST_TYPE;
 		vm.request = {
 			requestType: vm.requestType,
@@ -38,17 +39,24 @@
 		switch(vm.requestType){
 			case CONSTANTS.REQUEST_TYPE.MAKE_YOUR_DEAL:
 				vm.title = STRINGS.MAKE_YOUR_DEAL_TEXT;
+				vm.loaderType = CONSTANTS.LOADER_TYPE.QUOTE_SENT;
 				break;
 			case CONSTANTS.REQUEST_TYPE.GROUP_BOOKING:
 				vm.title = STRINGS.GROUP_BOOKING_TEXT;
+				vm.loaderType = CONSTANTS.LOADER_TYPE.EXECUTIVE_CALL
 				break;
 			case CONSTANTS.REQUEST_TYPE.PARTY_CORPORATE_BOOKING:
-				vm.title = STRINGS.PARTY_CORPORATE_BOOKING;
+				vm.title = STRINGS.PARTY_CORPORATE_BOOKING_TEXT;
+				vm.loaderType = CONSTANTS.LOADER_TYPE.EXECUTIVE_CALL
 				break;
 			default:
 				vm.title = STRINGS.MAKE_YOUR_DEAL_TEXT;
 		}
 
+		//Methods
+		vm.requestSent = function(){
+
+		}
 
 
 	}

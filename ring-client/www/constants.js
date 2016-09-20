@@ -18,6 +18,10 @@
 		"PARTY_CORPORATE_BOOKING_TYPE" : { 
 			PER_HEAD: 0,
 			A_LA_CARTE: 1
+		},
+		"LOADER_TYPE": {
+			EXECUTIVE_CALL: 0,
+			QUOTE_SENT: 1
 		}
     })
 })();
