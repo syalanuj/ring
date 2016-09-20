@@ -78,8 +78,7 @@ angular.module('starter.controllers', [])
 })
 .controller('PreOrderConfirmCtrl', function($scope, $stateParams) {
 })
-.controller('RestaurantsCtrl', function($scope, $stateParams) {
-})
+
 .controller('PreOrderVoucherCtrl', function($scope, $stateParams) {
 })
 .controller('PreOrderVoucherBookingCtrl', function($scope, $stateParams) {
