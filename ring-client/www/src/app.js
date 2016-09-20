@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic','pascalprecht.translate','app.constants','app.strings', 'starter.controllers', 'app.login', 'app.home', 'app.request','app.loaderSent','app.restaurants'])
+angular.module('starter', ['ionic','pascalprecht.translate','app.constants','app.strings', 'starter.controllers', 'app.login', 'app.home', 'app.request','app.loaderSent','app.restaurants','app.voucher','app.preOrderMenu'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -169,6 +169,24 @@ angular.module('starter', ['ionic','pascalprecht.translate','app.constants','app
         'menuContent': {
           templateUrl: 'src/components/preOrderVoucherBooking/preOrderVoucherBooking.html',
           controller: 'PreOrderVoucherBookingCtrl'
+        }
+      }
+    })
+  .state('app.preOrderMenu', {
+      url: '/preOrderMenu',
+      views: {
+        'menuContent': {
+          templateUrl: 'src/components/preOrderMenu/preOrderMenu.html',
+          controller: 'PreOrderMenuCtrl'
+        }
+      }
+    })
+  .state('app.voucher', {
+      url: '/voucher',
+      views: {
+        'menuContent': {
+          templateUrl: 'src/components/voucher/voucher.html',
+          controller: 'VoucherCtrl'
         }
       }
     })
