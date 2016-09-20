@@ -28,14 +28,14 @@
 				</div>
 			</div>
 			<!-- date -->
-			<div class="guests lato-m red flex container">
+			<div ng-show="requestType === RequestTypes.PARTY_CORPORATE_BOOKING" class="guests lato-m red flex container">
 				<label>Date</label>
 				<div class="margin-left">
 					<input type="date" name="">
 				</div>
 			</div>
 			<!-- time -->
-			<div class="price-disc container guests">
+			<div ng-show="requestType === RequestTypes.PARTY_CORPORATE_BOOKING" class="price-disc container guests">
 				<label class="lato-m red">
 					Time
 				</label>
@@ -120,9 +120,9 @@
 			</div>
 			<!-- submit button -->
 			<div class="margin-top-auto">
-				<button class="button button-full button-assertive lato-m bottom-submit">
+				<a href="#/app/loaderSent" class="button button-full button-assertive lato-m bottom-submit">
 					Submit
-				</button>
+				</a>
 			</div>
 		</div>
 	</ion-content>
