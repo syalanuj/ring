@@ -7,6 +7,11 @@
 
 	function requestCtrl($scope, $state, CONSTANTS, STRINGS) {
 		/* jshint validthis: true */
+		$scope.user= {
+        min:200,
+        max:2000,
+        value:200
+    }
 		var vm = $scope;
 		vm.title = "Request";
 		vm.requestType = parseInt($state.params.type);

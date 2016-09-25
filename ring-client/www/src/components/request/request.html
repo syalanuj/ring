@@ -94,16 +94,14 @@
 				<ion-list ng-show="requestType === RequestTypes.GROUP_BOOKING">
 					<ion-radio ng-model="choice" ng-value="'B'" class="lato-m red">Discount Range</ion-radio>
 				</ion-list>
-				<label class="item item-input item-select">
-					<div class="input-label">
-					Min
+				<!-- <label class="item item-input item-select"> -->
+					
+					<div class="item range range-assertive">
+						Max
+						<input type="range" max="{{user.max}}" min="{{user.min}}" step="10" ng-model="user.value">
+						{{user.value}}
 					</div>
-					<select>
-						<option>Blue</option>
-						<option selected>Green</option>
-						<option>Red</option>
-					</select>
-				</label>
+				<!-- </label> -->
 				<label class="item item-input item-select">
 					<div class="input-label">
 					Max
