@@ -11,7 +11,7 @@
         min:200,
         max:2000,
         value:200
-    }
+    	}
 		var vm = $scope;
 		vm.title = "Request";
 		vm.requestType = parseInt($state.params.type);
@@ -24,14 +24,20 @@
 			tags:[],
 			requestDateTime: undefined,
 			dealPriceRange: {
-				min: 0,
-				max: 0,
+				min: 200,
+				max: 2000,
+				value: 200
 			},
-			dealDiscountRange: {
-				min: 0,
-				max: 0,
+			dealDiscountRangePercentage: {
+				min: 10,
+				max: 50,
+				value: 10
 			},
-			groupDiscountRangeInPercentage: 0,
+			groupDiscountRangePercentage: {
+				min: 10,
+				max: 50,
+				value: 10
+			},
 			partyCorporateType: CONSTANTS.PARTY_CORPORATE_TYPE.INDIVIDUAL,
 			partyCorporateDate: undefined,
 			partyCorporateTime: {
@@ -40,6 +46,9 @@
 			},
 			partyCorporateBookingType: CONSTANTS.PARTY_CORPORATE_BOOKING_TYPE.PER_HEAD
 		}
+		vm.makeYourDealRangeTypes = CONSTANTS.MAKE_YOUR_DEAL_RANGE_TYPE;
+		vm.makeYourDealSelectedRange = CONSTANTS.MAKE_YOUR_DEAL_RANGE_TYPE.PRICE_RANGE;
+
 
 		switch(vm.requestType){
 			case CONSTANTS.REQUEST_TYPE.MAKE_YOUR_DEAL:

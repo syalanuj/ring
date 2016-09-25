@@ -88,30 +88,33 @@
 			<!-- price or discount range / perhead-a-la carté-->
 			<div class="price-disc container">
 				<ion-list ng-show="requestType === RequestTypes.MAKE_YOUR_DEAL">
-					<ion-radio  ng-model="choice" ng-value="'A'" class="lato-m red">Price Range (&#8377;)</ion-radio>
-					<ion-radio ng-model="choice" ng-value="'B'" class="lato-m red">Discount Range</ion-radio>
+					<ion-radio ng-click="makeYourDealSelectedRange = makeYourDealRangeTypes.PRICE_RANGE"  ng-model="choice" ng-value="'A'" class="lato-m red">Price Range (&#8377;)</ion-radio>
+					<ion-radio ng-click="makeYourDealSelectedRange = makeYourDealRangeTypes.DISCOUNT_RANGE" ng-model="choice" ng-value="'B'" class="lato-m red">Discount Range</ion-radio>
 				</ion-list>
 				<ion-list ng-show="requestType === RequestTypes.GROUP_BOOKING">
 					<ion-radio ng-model="choice" ng-value="'B'" class="lato-m red">Discount Range</ion-radio>
 				</ion-list>
-				<!-- <label class="item item-input item-select"> -->
-					
-					<div class="item range range-assertive">
-						Max
-						<input type="range" max="{{user.max}}" min="{{user.min}}" step="10" ng-model="user.value">
-						{{user.value}}
-					</div>
-				<!-- </label> -->
-				<label class="item item-input item-select">
-					<div class="input-label">
+				<!-- Make_Your_Deal price range slider -->
+				<div ng-show="requestType === RequestTypes.MAKE_YOUR_DEAL">
+					<div ng-show="makeYourDealSelectedRange === makeYourDealRangeTypes.PRICE_RANGE" class="item range range-assertive">
 					Max
+						<input type="range" max="{{request.dealPriceRange.max}}" min="{{request.dealPriceRange.min}}" step="100" ng-model="request.dealPriceRange.value">
+					{{request.dealPriceRange.value}}
 					</div>
-					<select>
-						<option>Blue</option>
-						<option selected>Green</option>
-						<option>Red</option>
-					</select>
-				</label>
+					<!-- discount range slider -->
+					<div ng-show="makeYourDealSelectedRange === makeYourDealRangeTypes.DISCOUNT_RANGE" class="item range range-assertive">
+					Max
+						<input type="range" max="{{request.dealDiscountRangePercentage.max}}" min="{{request.dealDiscountRangePercentage.min}}" step="10" ng-model="request.dealDiscountRangePercentage.value">
+					{{request.dealDiscountRangePercentage.value}}%
+					</div>
+				</div>
+				<div ng-show="requestType === RequestTypes.GROUP_BOOKING">
+					<div class="item range range-assertive">
+					Max
+						<input type="range" max="{{request.groupDiscountRangePercentage.max}}" min="{{request.groupDiscountRangePercentage.min}}" step="10" ng-model="request.groupDiscountRangePercentage.value">
+					{{request.groupDiscountRangePercentage.value}}%
+					</div>
+				</div>
 			</div>
 			<!-- group booking slider -->
 

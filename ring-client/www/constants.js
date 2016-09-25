@@ -22,6 +22,10 @@
 		"LOADER_TYPE": {
 			EXECUTIVE_CALL: 0,
 			QUOTE_SENT: 1
+		},
+		"MAKE_YOUR_DEAL_RANGE_TYPE": {
+			PRICE_RANGE: 0,
+			DISCOUNT_RANGE: 1
 		}
     })
 })();
