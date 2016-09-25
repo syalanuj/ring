@@ -187,6 +187,9 @@ select{
 .req-wrap input{
 background-color: #f8f8f8;
 }
+.req-wrap input[type="range"]{
+	background-color: white;
+}
 .margin-left{
 	margin-left: auto;
 }
