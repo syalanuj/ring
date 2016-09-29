@@ -1,6 +1,28 @@
-<ion-view view-title="Pre Order Menu">
-  <ion-content>
-    <!-- <h1>Pre Order Menu</h1> -->
-    <h1 class="button " ui-sref="app.preOrderConfirm">Pre-Order confirm</h1>
-  </ion-content>
-</ion-view>
+<ion-view title="Scrollable Tabbed Slide box">
+        <ion-content scroll="false">
+          	<tab-slide-box>
+			    	<div class="tsb-icons">
+			    		<div class="tsb-ic-wrp">
+							<ion-scroll direction="x" class="tsb-hscroll">
+								<a href="javascript:;" class="{{tab.icon}}" ng-repeat="tab in tabs" on-finish-render="test()">{{tab.text}}</a>
+							</ion-scroll>
+						</div>
+			    	</div>
+			        <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
+			            <ion-slide>
+			                <h3>Starters</h3>
+			            </ion-slide>
+			            <ion-slide>
+			                <h3>Main Course</h3>
+			            </ion-slide>
+			            <ion-slide>
+			                <h3>Rice/ Noodles</h3>
+			            </ion-slide>
+						<ion-slide>
+			                <h3>Drinks</h3>
+			            </ion-slide>
+			            
+			        </ion-slide-box>
+          	</tab-slide-box>
+        </ion-content>
+      </ion-view>

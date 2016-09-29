@@ -9,5 +9,14 @@
 		/* jshint validthis: true */
 		var vm = $scope;
 		vm.title = "Pre Order Menu";
+        $scope.tabs = [
+					{"text" : "Starters"},
+					{"text" : "Main Course"},
+					{"text" : "Rice/Noodles"},
+					{"text" : "Drinks"}
+				];
+				$scope.onSlideMove = function(data){
+					alert("You have selected " + data.index + " tab");
+				};
 	}
 })();

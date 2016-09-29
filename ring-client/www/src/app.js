@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic','pascalprecht.translate','app.constants','app.strings', 'starter.controllers', 'app.login', 'app.home', 'app.request','app.loaderSent','app.restaurants','app.voucher','app.preOrderMenu'])
+angular.module('starter', ['ionic','pascalprecht.translate','tabSlideBox','app.constants','app.strings', 'starter.controllers', 'app.login', 'app.home', 'app.request','app.loaderSent','app.restaurants','app.voucher','app.preOrderMenu'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
