@@ -15,8 +15,5 @@
 					{"text" : "Rice/Noodles"},
 					{"text" : "Drinks"}
 				];
-				$scope.onSlideMove = function(data){
-					alert("You have selected " + data.index + " tab");
-				};
 	}
 })();
