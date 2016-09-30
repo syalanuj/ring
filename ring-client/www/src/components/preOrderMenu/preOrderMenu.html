@@ -2,7 +2,7 @@
         <ion-content scroll="false">
           <tab-slide-box tab="0">
      <div class="tsb-icons">
-     <div class="tsb-ic-wrp">
+     <div class="tsb-ic-wrp lato-m">
 <ion-scroll direction="x" class="tsb-hscroll">
 <a href="javascript:;" class="{{tab.icon}}" ng-repeat="tab in tabs"
 on-finish-render="test()">{{tab.text}}</a>
@@ -10,212 +10,231 @@ on-finish-render="test()">{{tab.text}}</a>
 </div>
      </div>
         <ion-slide-box show-pager="false"
-on-slide-changed="slideHasChanged($index)">
+on-slide-changed="slideHasChanged($index)" class="lato-m">
             <ion-slide>
 <ion-scroll style="height:100%" delegate-handle="slide1Scroll" >
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
-                <h3>Home content</h3>
+                <ul class="lato-m red container">
+        <!-- diff classes for veg and non veg food, must give options in backend -->
+    		<li class="veg flex">
+    			<span>Chilli Paneer (3) <br> Rs 345</span>
+				<div class="margin-left flex">
+					<button class="button button-small button-stable minus-button" ng-click="request.guestCount = request.guestCount - 1">
+						<i class="ionicons ion-android-remove"></i>
+					</button>
+					<input type="number" ng-model="request.guestCount" name="" min="1">
+					<button class="button button-small button-stable plus-button" ng-click="request.guestCount = request.guestCount + 1">
+						<i class="ionicons ion-android-add"></i>
+					</button>
+				</div>
+    		</li>
+    		<li class="veg flex">
+    			<span>Chilli Mushroom (1) <br> Rs 345</span>
+				<div class="margin-left flex">
+					<button class="button button-small button-stable minus-button" ng-click="request.guestCount = request.guestCount - 1">
+						<i class="ionicons ion-android-remove"></i>
+					</button>
+					<input type="number" ng-model="request.guestCount" name="" min="1">
+					<button class="button button-small button-stable plus-button" ng-click="request.guestCount = request.guestCount + 1">
+						<i class="ionicons ion-android-add"></i>
+					</button>
+				</div>
+    		</li>
+    		<li class="non-veg flex">
+    			<span>Chilli Chicken(3) <br> Rs 345</span>
+    			<div class="margin-left flex">
+					<button class="button button-small button-stable minus-button" ng-click="request.guestCount = request.guestCount - 1">
+						<i class="ionicons ion-android-remove"></i>
+					</button>
+					<input type="number" ng-model="request.guestCount" name="" min="1">
+					<button class="button button-small button-stable plus-button" ng-click="request.guestCount = request.guestCount + 1">
+						<i class="ionicons ion-android-add"></i>
+					</button>
+				</div>
+    		</li>
+    		<li class="non-veg flex">
+    			<span>Chicken Pasta(2) <br> Rs 345</span>
+    			<div class="margin-left flex">
+					<button class="button button-small button-stable minus-button" ng-click="request.guestCount = request.guestCount - 1">
+						<i class="ionicons ion-android-remove"></i>
+					</button>
+					<input type="number" ng-model="request.guestCount" name="" min="1">
+					<button class="button button-small button-stable plus-button" ng-click="request.guestCount = request.guestCount + 1">
+						<i class="ionicons ion-android-add"></i>
+					</button>
+				</div>
+    		</li>
+    	</ul>
 </ion-scroll>
             </ion-slide>
             <ion-slide>
                 <ion-list>
                 <ion-scroll style="height:100%">
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-                 <ion-item>check</ion-item>
-
-                </ion-item>
-            </ion-slide>
+                <ul class="lato-m red container">
+        <!-- diff classes for veg and non veg food, must give options in backend -->
+    		<li class="veg flex">
+    			<span>Chilli Paneer (3) <br> Rs 345</span>
+				<div class="margin-left flex">
+					<button class="button button-small button-stable minus-button" ng-click="request.guestCount = request.guestCount - 1">
+						<i class="ionicons ion-android-remove"></i>
+					</button>
+					<input type="number" ng-model="request.guestCount" name="" min="1">
+					<button class="button button-small button-stable plus-button" ng-click="request.guestCount = request.guestCount + 1">
+						<i class="ionicons ion-android-add"></i>
+					</button>
+				</div>
+    		</li>
+    		<li class="veg flex">
+    			<span>Chilli Mushroom (1) <br> Rs 345</span>
+				<div class="margin-left flex">
+					<button class="button button-small button-stable minus-button" ng-click="request.guestCount = request.guestCount - 1">
+						<i class="ionicons ion-android-remove"></i>
+					</button>
+					<input type="number" ng-model="request.guestCount" name="" min="1">
+					<button class="button button-small button-stable plus-button" ng-click="request.guestCount = request.guestCount + 1">
+						<i class="ionicons ion-android-add"></i>
+					</button>
+				</div>
+    		</li>
+    		<li class="non-veg flex">
+    			<span>Chilli Chicken(3) <br> Rs 345</span>
+    			<div class="margin-left flex">
+					<button class="button button-small button-stable minus-button" ng-click="request.guestCount = request.guestCount - 1">
+						<i class="ionicons ion-android-remove"></i>
+					</button>
+					<input type="number" ng-model="request.guestCount" name="" min="1">
+					<button class="button button-small button-stable plus-button" ng-click="request.guestCount = request.guestCount + 1">
+						<i class="ionicons ion-android-add"></i>
+					</button>
+				</div>
+    		</li>
+    		<li class="non-veg flex">
+    			<span>Chicken Pasta(2) <br> Rs 345</span>
+    			<div class="margin-left flex">
+					<button class="button button-small button-stable minus-button" ng-click="request.guestCount = request.guestCount - 1">
+						<i class="ionicons ion-android-remove"></i>
+					</button>
+					<input type="number" ng-model="request.guestCount" name="" min="1">
+					<button class="button button-small button-stable plus-button" ng-click="request.guestCount = request.guestCount + 1">
+						<i class="ionicons ion-android-add"></i>
+					</button>
+				</div>
+    		</li>
+    	</ul>
+                </ion-scroll>
+                </ion-slide>
             <ion-slide>
-                <h3>Mail content</h3>
+                <ul class="lato-m red container">
+        <!-- diff classes for veg and non veg food, must give options in backend -->
+    		<li class="veg flex">
+    			<span>Chilli Paneer (3) <br> Rs 345</span>
+				<div class="margin-left flex">
+					<button class="button button-small button-stable minus-button" ng-click="request.guestCount = request.guestCount - 1">
+						<i class="ionicons ion-android-remove"></i>
+					</button>
+					<input type="number" ng-model="request.guestCount" name="" min="1">
+					<button class="button button-small button-stable plus-button" ng-click="request.guestCount = request.guestCount + 1">
+						<i class="ionicons ion-android-add"></i>
+					</button>
+				</div>
+    		</li>
+    		<li class="veg flex">
+    			<span>Chilli Mushroom (1) <br> Rs 345</span>
+				<div class="margin-left flex">
+					<button class="button button-small button-stable minus-button" ng-click="request.guestCount = request.guestCount - 1">
+						<i class="ionicons ion-android-remove"></i>
+					</button>
+					<input type="number" ng-model="request.guestCount" name="" min="1">
+					<button class="button button-small button-stable plus-button" ng-click="request.guestCount = request.guestCount + 1">
+						<i class="ionicons ion-android-add"></i>
+					</button>
+				</div>
+    		</li>
+    		<li class="non-veg flex">
+    			<span>Chilli Chicken(3) <br> Rs 345</span>
+    			<div class="margin-left flex">
+					<button class="button button-small button-stable minus-button" ng-click="request.guestCount = request.guestCount - 1">
+						<i class="ionicons ion-android-remove"></i>
+					</button>
+					<input type="number" ng-model="request.guestCount" name="" min="1">
+					<button class="button button-small button-stable plus-button" ng-click="request.guestCount = request.guestCount + 1">
+						<i class="ionicons ion-android-add"></i>
+					</button>
+				</div>
+    		</li>
+    		<li class="non-veg flex">
+    			<span>Chicken Pasta(2) <br> Rs 345</span>
+    			<div class="margin-left flex">
+					<button class="button button-small button-stable minus-button" ng-click="request.guestCount = request.guestCount - 1">
+						<i class="ionicons ion-android-remove"></i>
+					</button>
+					<input type="number" ng-model="request.guestCount" name="" min="1">
+					<button class="button button-small button-stable plus-button" ng-click="request.guestCount = request.guestCount + 1">
+						<i class="ionicons ion-android-add"></i>
+					</button>
+				</div>
+    		</li>
+    	</ul>
             </ion-slide>
 <ion-slide>
-                <h3>Car content</h3>
+                <ul class="lato-m red container">
+        <!-- diff classes for veg and non veg food, must give options in backend -->
+    		<li class="veg flex">
+    			<span>Chilli Paneer (3) <br> Rs 345</span>
+				<div class="margin-left flex">
+					<button class="button button-small button-stable minus-button" ng-click="request.guestCount = request.guestCount - 1">
+						<i class="ionicons ion-android-remove"></i>
+					</button>
+					<input type="number" ng-model="request.guestCount" name="" min="1">
+					<button class="button button-small button-stable plus-button" ng-click="request.guestCount = request.guestCount + 1">
+						<i class="ionicons ion-android-add"></i>
+					</button>
+				</div>
+    		</li>
+    		<li class="veg flex">
+    			<span>Chilli Mushroom (1) <br> Rs 345</span>
+				<div class="margin-left flex">
+					<button class="button button-small button-stable minus-button" ng-click="request.guestCount = request.guestCount - 1">
+						<i class="ionicons ion-android-remove"></i>
+					</button>
+					<input type="number" ng-model="request.guestCount" name="" min="1">
+					<button class="button button-small button-stable plus-button" ng-click="request.guestCount = request.guestCount + 1">
+						<i class="ionicons ion-android-add"></i>
+					</button>
+				</div>
+    		</li>
+    		<li class="non-veg flex">
+    			<span>Chilli Chicken(3) <br> Rs 345</span>
+    			<div class="margin-left flex">
+					<button class="button button-small button-stable minus-button" ng-click="request.guestCount = request.guestCount - 1">
+						<i class="ionicons ion-android-remove"></i>
+					</button>
+					<input type="number" ng-model="request.guestCount" name="" min="1">
+					<button class="button button-small button-stable plus-button" ng-click="request.guestCount = request.guestCount + 1">
+						<i class="ionicons ion-android-add"></i>
+					</button>
+				</div>
+    		</li>
+    		<li class="non-veg flex">
+    			<span>Chicken Pasta(2) <br> Rs 345</span>
+    			<div class="margin-left flex">
+					<button class="button button-small button-stable minus-button" ng-click="request.guestCount = request.guestCount - 1">
+						<i class="ionicons ion-android-remove"></i>
+					</button>
+					<input type="number" ng-model="request.guestCount" name="" min="1">
+					<button class="button button-small button-stable plus-button" ng-click="request.guestCount = request.guestCount + 1">
+						<i class="ionicons ion-android-add"></i>
+					</button>
+				</div>
+    		</li>
+    	</ul>
             </ion-slide>
-            <ion-slide>
-                <h3>Profile content</h3>
-            </ion-slide>
-            <ion-slide>
-                <h3>Favourites content</h3>
-            </ion-slide>
-<ion-slide>
-                <h3>Chats content</h3>
-            </ion-slide>
-<ion-slide>
-                <h3>Settings content</h3>
-            </ion-slide>
-<ion-slide>
-                <h3>Photos content</h3>
-            </ion-slide>
-<ion-slide>
-                <h3>Pets content</h3>
-            </ion-slide>
+                   
         </ion-slide-box>
           </tab-slide-box>
+           <div class="bottom-btn">
+				<a ng-href="#/app/loaderSent/{{loaderType}}"  class="button button-full button-assertive lato-m bottom-submit text-right">
+					View Order <i class="ionicons ion-arrow-right-c"></i>
+				</a>
+			</div>
         </ion-content>
       </ion-view>

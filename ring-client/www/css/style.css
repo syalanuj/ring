@@ -204,6 +204,7 @@ label{
 input[type="number"] {
 
     	background-color: #f8f8f8;
+    	height: auto;
 	
    }
   input[type="tel"] {
@@ -401,7 +402,35 @@ select{
 .button-bar > .button:first-child,.button-bar > .button:last-child{
 	border-radius: 0px;
 }
-
-
-
-
+/*slidebox*/
+.tabbed-slidebox .tsb-icons{
+	margin: 0px!important;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.tabbed-slidebox .tsb-icons .scroll a{
+	line-height: 0px;
+	font-size: 14px!important;
+	color: #e74c3c;
+	/*border-bottom:3px solid #e74c3c!important;*/
+	/*margin: 0 15px 10px 0!important;*/
+}
+.tabbed-slidebox .tsb-icons .scroll a.active{
+	font-size: 14px!important;
+	color: #8f2f25;
+	/*border-bottom:3px solid #8f2f25!important; */
+	border-bottom: 0px!important;
+}
+.tabbed-slidebox .slider-slide{
+	background-color: white!important;
+	text-align: left!important;
+	list-style-type: disc!important;
+}
+li{
+	padding: 5px;
+}
+.bottom-btn{
+	width: 100%;
+	position: absolute;;
+	bottom: 0px;
+}
